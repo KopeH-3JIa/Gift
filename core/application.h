@@ -16,8 +16,6 @@ public:
     Application&        setArguments(const StringArray& args);
     StringArray         arguments() const;
 
-    int run();
-
 private:
     Application();
     Application(const Application&) = delete;

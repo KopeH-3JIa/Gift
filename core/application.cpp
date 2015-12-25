@@ -27,7 +27,4 @@ StringArray Application::arguments() const{
     return g_ApplicationArgs;
 }
 
-int Application::run(){
-    return 0;
-}
 

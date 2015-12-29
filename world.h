@@ -32,8 +32,8 @@ public:
     }
 
     template<typename T>
-    T&  system() noexcept{
-        return *reinterpret_cast<T*>(_systems.at(getSystemTypeId<T>()));
+    T*  system() noexcept{
+        return reinterpret_cast<T*>(_systems.at(getSystemTypeId<T>()));
     }
 
 private:
